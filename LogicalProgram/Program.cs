@@ -8,7 +8,7 @@ namespace LogicalProgram
             Console.WriteLine("Welcome to logical programming");
             while (true)
             {
-                Console.WriteLine("Select program\n 1. fibonacci series\n 2. perfect number\n 3. prime number\n 4. reverse number");
+                Console.WriteLine("Select program\n 1. fibonacci series\n 2. perfect number\n 3. prime number\n 4. reverse number\n 5. temperature conversion");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -27,6 +27,10 @@ namespace LogicalProgram
                     case 4:
                         ReverseNumber reverseNumber = new ReverseNumber();
                         reverseNumber.Number();
+                        break;
+                    case 5:
+                        TemperatureConversion temperatureConversion = new TemperatureConversion();
+                        temperatureConversion.Conversion();
                         break;
                     default:
                         Console.WriteLine("Select correct option");
