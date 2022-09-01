@@ -8,7 +8,7 @@ namespace LogicalProgram
             Console.WriteLine("Welcome to logical programming");
             while (true)
             {
-                Console.WriteLine("Select program\n 1. fibonacci series\n 2. perfect number\n 3. prime number\n 4. reverse number\n 5. temperature conversion\n 6.MonthlyPayment\n 7.MonthlyPayment");
+                Console.WriteLine("Select program\n 1. fibonacci series\n 2. perfect number\n 3. prime number\n 4. reverse number\n 5. temperature conversion\n 6.MonthlyPayment\n 7.CouponNumbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -35,6 +35,10 @@ namespace LogicalProgram
                     case 6:
                         MonthlyPayment monthlyPayment = new MonthlyPayment();
                         monthlyPayment.Payment();
+                        break;
+                    case 7:
+                        CouponNumbers couponNumbers = new CouponNumbers();
+                        couponNumbers.DistinctCouponNumber();
                         break;
                     default:
                         Console.WriteLine("Select correct option");
